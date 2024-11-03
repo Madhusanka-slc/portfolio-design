@@ -5,11 +5,12 @@ import grainImage from '@/assets/images/grain.jpg'
 import StarIcon from '@/assets/icons/star.svg'
 import HeroOrbit from '@/components/HeroOrbit'
 import SparkleIcon from '@/assets/icons/sparkle.svg'
+import Shapes from '@/components/Shapes'
 
 export const HeroSection = () => {
   return (
     <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
-      <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
+      <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] -z-10'>
         <div className='absolute inset-0 -z-30 opacity-5' style={{
           backgroundImage: `url(${grainImage.src})`,
         }}></div>
@@ -48,7 +49,18 @@ export const HeroSection = () => {
         <HeroOrbit size={650} rotation={-5} >
           <SparkleIcon className="size-2 rounded-full text-emerald-300/20"></SparkleIcon>
         </HeroOrbit>
-
+        <div className='lg:size-[1220px] md:size-[1120px] size-[1020px] shape-center'>
+        <Shapes color={"#0d1117"} intensity={20} distort={0.8} speed={2} />
+        </div>
+        <div className='lg:size-[1120px] md:size-[1020px] size-[920px] shape-center'>
+        <Shapes color={"#0d1117"} intensity={15} distort={0.6} speed={2} />
+        </div>
+        <div className='lg:size-[1020px] md:size-[920px] size-[820px] shape-center'>
+        <Shapes color={"#0d1117"} intensity={10} distort={0.6} speed={2} />
+        </div>
+        <div className='lg:size-[820px] md:size-[720px] size-[620px] shape-center'>
+        <Shapes color={"#0d1117"} intensity={7} distort={0.6} speed={2} />
+        </div>
       </div>
 
 
