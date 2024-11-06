@@ -5,6 +5,7 @@ import Image from "next/image";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import grainImage from '@/assets/images/grain.jpg'
+import { Card } from "./Card";
 
 
 const portfolioProjects = [
@@ -48,7 +49,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section id="projects" className="pb-16 lg:py-24">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-center text-transparent bg-clip-text">
@@ -65,16 +66,15 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
-          {portfolioProjects.map((project) => (
-            <div
+          {portfolioProjects.map((project, projectIndex) => (
+            <Card
               key={project.title}
-              className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 after:pointer-events-none
-              after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-10 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20"
+              className="px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 pb-0 sticky top-16"
+              // style={{
+              //   top: `calc(64px + ${projectIndex*20}px)`,
+              // }}
             >
-              <div
-                className="absolute inset-0 -z-10 opacity-5"
-                style={{ backgroundImage: `url(${grainImage.src})` }}
-              ></div>
+
 
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
@@ -115,7 +115,7 @@ export const ProjectsSection = () => {
                   />
                 </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
