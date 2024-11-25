@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, run the development server:
-
+```bash
 npm run dev
 # or
 yarn dev
@@ -15,8 +15,15 @@ yarn dev
 pnpm dev
 # or
 bun dev
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+
+https://github.com/user-attachments/assets/e36f649b-4304-488f-a067-b962a6308862
+
+
 
 You can start editing the pages by modifying the files in the `pages` or `app` (if using the app router) directory. The application auto-updates as you edit the files.
 
