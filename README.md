@@ -4,6 +4,12 @@ A personal portfolio showcasing skills, projects, and experiences. Built with **
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+
+https://github.com/user-attachments/assets/1be5496f-0113-4632-b71e-e7e3721d2143
+
+
+
 ## Getting Started
 
 ### Prerequisites
@@ -18,13 +24,14 @@ Make sure you have the following installed on your system:
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Madhusanka-slc/portfolio-design.git
    ```
 
 2. **Navigate to the project directory**:
 
    ```bash
-   cd portfolio
+   cd portfolio-design
+
    ```
 
 3. **Install dependencies**:
